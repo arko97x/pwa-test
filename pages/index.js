@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head"
+import Link from "next/link"
+import styles from "../styles/Home.module.css"
 
 export default function Home() {
   return (
@@ -11,9 +12,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <a href="/about" className={styles.description}>
+        <Link href="/about" className={styles.description} passHref>
           <code className={styles.code}>about</code>
-        </a>
+        </Link>
       </main>
     </div>
   )
